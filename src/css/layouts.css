@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--font-main);
+}
+
+header {
+    z-index: 5;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    background-color: var(--color-primary);
+    height: 100px;
+    margin-bottom: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 1px 1px 1px 0px var(--color-grey);
+}
+
+main {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.hero-container {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.hero-background-image {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-background-image {
+  background-image: url(../../assets/images/background-desktop.jpg);
+  background-position: bottom center;
+}
+
+.main-content-container {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 300px;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    padding: 30px;
+    text-decoration: none;
+    box-shadow: inset 1px 1px 1px 0px var(--color-grey);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.icons {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 30px;
+}
+
+.icons i {
+    font-size: 40px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+@media (hover: hover) {
+    .links:hover {
+        cursor: pointer;
+        opacity: 30%;
+    }
+}
+
+.links i {
+    font-size: 40px;
+}
+
+.links span {
+    font-size: 20px;
+}

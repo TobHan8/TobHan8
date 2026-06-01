@@ -1,0 +1,11 @@
+:root {
+
+  /* --- MAIN COLORS FROM DESIGN PROJECT --- */
+  --color-primary: #1A1A1F;
+  --color-secondary: #569CD6;
+  --color-white: #ffffff;
+  --color-grey: #4D4D4D;
+
+  /* --- FONT STACK --- */
+  --font-main: 'consolas', 'menlo', monospace;
+}
