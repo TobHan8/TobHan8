@@ -1,3 +1,5 @@
+import { downloadFromUrl } from "../utils.js";
+
 const mainContentContainer = document.getElementById('main-content-container');
 
 function cardSwap(card, newHTML, styles = {}) {
@@ -53,6 +55,7 @@ function displayIndex() {
 
     <div class="about-content-container">
         <div class="about-content">
+
             <h2>.aboutMe</h2>
             <p>
             Hello world! My name is Tobias. I am a 28 year-old man from Bergen in Norway. <br></br> 
@@ -60,8 +63,21 @@ function displayIndex() {
             In my first year, I started out with no coding experience. From here I have grown into becoming increasingly comfortable 
             with creating websites with vanilla HTML, CSS and JavaScript. <br></br> This portfolio page reflects this journey by showcasing my first coding project 
             and the following school projects. These projects are not refined or suited for professional use, but they give an honest and humble insight in my 
-            first year journey into Front End Development.
+            first year journey into Front End Development. <br></br>
+            If you wish to take a look at my CV and cover letter, please click the buttons below to download the documents.
             </p>
+
+            <div class="doc-links">
+                <button class="download" id="cv">
+                    <i class="fa-solid fa-address-card"></i>
+                    Download CV
+                </button>
+                <button class="download" id="letter">
+                    <i class="fa-solid fa-file"></i>
+                    Download cover letter
+                </button>
+            </div>
+
         </div>
     </div>
     `;
@@ -162,6 +178,17 @@ function displayIndex() {
             </div>
         </div>
         `, {gap: '20px', justifyContent: 'flex-start'});
+    });
+
+    const cv = document.getElementById('cv');
+    const letter = document.getElementById('letter');
+
+    cv.addEventListener('click', () => {
+        downloadFromUrl('/assets/documents/test.docx', 'test');
+    });
+
+    letter.addEventListener('click', () => {
+        downloadFromUrl('/assets/documents/test2.docx', 'test2');
     });
 }
 

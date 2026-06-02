@@ -70,11 +70,33 @@
     transition: 0.3s ease;
 }
 
+.doc-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.download {
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 50px;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-family: var(--font-main);
+    font-size: 25px;
+    padding: 0.5em 0.75em;
+    border: none;
+    transition: 0.3s ease;
+}
+
 @media(hover: hover) {
     .toast-close:hover,
     .email:hover,
     .close-btn:hover,
-    .contact-btn:hover {
+    .contact-btn:hover,
+    .download:hover {
         cursor: pointer;
         opacity: 30%;
     }
