@@ -14,38 +14,56 @@ function displayIndex() {
 
     mainContentContainer.innerHTML =
     `
-    <a id="card1" class="card">
-        <div class="card-content">
-            <h2>.semesterProject1</h2>
-            <p>First HTML/CSS project in Front End Development studies</p>
-            <div class="icons">
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-        </div>
-    </a>
+    <div class="cards">
 
-    <a id="card2" class="card">
-        <div class="card-content">
-            <h2>.javaScript1</h2>
-            <p>My first JavaScript project in Front End Development studies</p>
-            <div class="icons">
-            <i class="fa-brands fa-square-js"></i>
+        <a id="card1" class="card">
+            <div class="card-content">
+                <h2>.semesterProject1</h2>
+                <p>First HTML/CSS project in Front End Development studies</p>
+                <div class="icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
 
-    <a id="card3" class="card">
-        <div class="card-content">
-            <h2>.examProject1</h2>
-            <p>Final exam project in first year of Front End Development studies</p>
-            <div class="icons">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-square-js"></i>
+        <a id="card2" class="card">
+            <div class="card-content">
+                <h2>.javaScript1</h2>
+                <p>My first JavaScript project in Front End Development studies</p>
+                <div class="icons">
+                <i class="fa-brands fa-square-js"></i>
+                </div>
             </div>
-        </div class="card-content">
-    </a>
+        </a>
+
+        <a id="card3" class="card">
+            <div class="card-content">
+                <h2>.examProject1</h2>
+                <p>Final exam project in first year of Front End Development studies</p>
+                <div class="icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                </div>
+            </div class="card-content">
+        </a>
+
+    </div>
+
+    <div class="about-content-container">
+        <div class="about-content">
+            <h2>.aboutMe</h2>
+            <p>
+            Hello world! My name is Tobias. I am a 28 year-old man from Bergen in Norway. <br></br> 
+            For the last year I have been studying Front End Development at Noroff school of digital media and technology. 
+            In my first year, I started out with no coding experience. From here I have grown into becoming increasingly comfortable 
+            with creating websites with vanilla HTML, CSS and JavaScript. <br></br> This portfolio page reflects this journey by showcasing my first coding project 
+            and the following school projects. These projects are not refined or suited for professional use, but they give an honest and humble insight in my 
+            first year journey into Front End Development.
+            </p>
+        </div>
+    </div>
     `;
 
     const card1 = document.getElementById('card1');
