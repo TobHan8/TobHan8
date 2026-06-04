@@ -3,12 +3,16 @@
 I am a first year student in Front End Development at Noroff School of digital media and technology.
 
 - 🔭 I’m currently working on projects in the Noroff Frond End Development courses.
+
 - 🌱 I’m currently learning HTML, vanilla CSS, JavaScript and Figma.
+
 - 👯 I’m looking to collaborate on assigned school projects and other creative projects to expand my knowledge and experience.
+
 - 💬 Ask me about creating e-commerce websites with vanilla HTML, CSS and JavaScript. You can also ask me about weightlifting, computer building and martial arts.
-- 📫 How to reach me: [Insert link to deployed portfolio page later]
+
+- 📫 How to reach me: [My portfolio page](https://tobhan8.github.io/TobHan8/) / tobhan06346@stud.noroff.no
+
 - ⚡ Fun fact: I have a degree certificate in winding of electrical motors.
--->
 
 <!--
 **TobHan8/TobHan8** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
