@@ -297,11 +297,11 @@ function displayIndex() {
     const letter = document.getElementById('letter');
 
     cv.addEventListener('click', () => {
-        downloadFromUrl('/assets/documents/test.docx', 'test');
+        downloadFromUrl('assets/documents/test.docx', 'test');
     });
 
     letter.addEventListener('click', () => {
-        downloadFromUrl('/assets/documents/test2.docx', 'test2');
+        downloadFromUrl('assets/documents/test2.docx', 'test2');
     });
 
     listeners();
