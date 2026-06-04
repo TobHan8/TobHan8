@@ -2,14 +2,225 @@ import { downloadFromUrl } from "../utils.js";
 
 const mainContentContainer = document.getElementById('main-content-container');
 
-function cardSwap(card, newHTML, styles = {}) {
+
+// Function to swap card content after pointer event fires
+function cardSwap(card, newHTML) {
     const cardContent = card.querySelector('.card-content');
     cardContent.style.opacity = '0';
     setTimeout(() => {
         card.innerHTML = newHTML;
         Object.assign(card.style, styles);
-        cardContent.style.opacity = '1';
+        const newCardContent = card.querySelector('.card-content');
+        newCardContent.style.opacity = '1';
     },300);
+}
+
+// Function to attach eventListeners depending on mobile/desktop pointer events
+function listeners() {
+
+    const card1 = document.getElementById('card1');
+    const card2 = document.getElementById('card2');
+    const card3 = document.getElementById('card3');
+    const isMobile = window.matchMedia('(pointer: coarse)');
+
+    if (isMobile.matches) {
+
+        let card1Flip = false;
+        card1.addEventListener('click', () => {
+            if (!card1Flip) {
+                cardSwap(card1,
+                    `
+                    <div class="card-content">
+                        <a class="links" href="https://tobhan8.github.io/Semester-Project-1-Exam/" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Deployed website</span>
+                        </a>
+
+                        <a class="links" href="https://github.com/TobHan8/Semester-Project-1-Exam" target="_blank">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Code repository</span>
+                        </a>
+                    </div>
+                    `);
+                } else {
+                    cardSwap(card1,
+                        `
+                        <div class="card-content">
+                            <h2>.semesterProject1</h2>
+                            <p>First HTML/CSS project in Front End Development studies</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </div>
+                        `);
+                }
+                card1Flip = !card1Flip;
+        });
+
+
+        let card2Flip = false;
+            card2.addEventListener('click', () => {
+                if (!card2Flip) {
+                    cardSwap(card2,
+                    `
+                    <div class="card-content">
+                        <a class="links" href="https://tobhan8.github.io/JavaScript-1-Course-Assignment-Rainy-Days-API/" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Deployed website</span>
+                        </a>
+
+                        <a class="links" href="https://github.com/TobHan8/JavaScript-1-Course-Assignment-Rainy-Days-API" target="_blank">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Code repository</span>
+                        </a>
+                    </div>
+                    `);
+                } else {
+                     cardSwap(card2,
+                        `
+                        <div class="card-content">
+                            <h2>.javaScript1</h2>
+                            <p>My first JavaScript project in Front End Development studies</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-square-js"></i>
+                            </div>
+                        </div>
+                        `);
+                }
+                card2Flip = !card2Flip;
+            });
+
+            let card3Flip = false;
+            card3.addEventListener('click', () => {
+                if (!card3Flip) {
+                    cardSwap(card3,
+                        `
+                        <div class="card-content">
+                            <a class="links" href="https://tobhan8.github.io/exam-project-1/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>Deployed website</span>
+                            </a>
+
+                            <a class="links" href="https://github.com/TobHan8/exam-project-1" target="_blank">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>Code repository</span>
+                            </a>
+                        </div>
+                        `);
+                } else {
+                     cardSwap(card3,
+                        `
+                        <div class="card-content">
+                            <h2>.examProject1</h2>
+                            <p>Final exam project in first year of Front End Development studies</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-square-js"></i>
+                            </div>
+                        </div>
+                        `);
+                }
+                card3Flip = !card3Flip;
+            });
+
+
+    } else {
+        card1.addEventListener('mouseenter', () => {
+        cardSwap(card1,
+            `
+            <div class="card-content">
+                <a class="links" href="https://tobhan8.github.io/Semester-Project-1-Exam/" target="_blank">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Deployed website</span>
+                </a>
+
+                <a class="links" href="https://github.com/TobHan8/Semester-Project-1-Exam" target="_blank">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <span>Code repository</span>
+                </a>
+            </div>
+            `);
+        });
+
+        card1.addEventListener('mouseleave', () => {
+            cardSwap(card1,
+            `
+            <div class="card-content">
+                <h2>.semesterProject1</h2>
+                <p>First HTML/CSS project in Front End Development studies</p>
+                <div class="icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+            </div>
+            `);
+
+        });
+
+        card2.addEventListener('mouseenter', () => {
+            cardSwap(card2,
+            `
+            <div class="card-content">
+                <a class="links" href="https://tobhan8.github.io/JavaScript-1-Course-Assignment-Rainy-Days-API/" target="_blank">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Deployed website</span>
+                </a>
+
+                <a class="links" href="https://github.com/TobHan8/JavaScript-1-Course-Assignment-Rainy-Days-API" target="_blank">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <span>Code repository</span>
+                </a>
+            </div>
+            `);
+        });
+
+        card2.addEventListener('mouseleave', () => {
+            cardSwap(card2,
+            `
+            <div class="card-content">
+                <h2>.javaScript1</h2>
+                <p>My first JavaScript project in Front End Development studies</p>
+                <div class="icons">
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+            </div>
+            `);
+        });
+
+        card3.addEventListener('mouseenter', () => {
+        cardSwap(card3,
+            `
+            <div class="card-content">
+                <a class="links" href="https://tobhan8.github.io/exam-project-1/" target="_blank">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Deployed website</span>
+                </a>
+
+                <a class="links" href="https://github.com/TobHan8/exam-project-1" target="_blank">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <span>Code repository</span>
+                </a>
+            </div>
+            `);
+        });
+
+        card3.addEventListener('mouseleave', () => {
+            cardSwap(card3,
+            `
+            <div class="card-content">
+                <h2>.examProject1</h2>
+                <p>Final exam project in first year of Front End Development studies</p>
+                <div class="icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+            </div>
+            `);
+        });
+    }
 }
 
 function displayIndex() {
@@ -48,7 +259,7 @@ function displayIndex() {
                 <i class="fa-brands fa-css3-alt"></i>
                 <i class="fa-brands fa-square-js"></i>
                 </div>
-            </div class="card-content">
+            </div>
         </a>
 
     </div>
@@ -82,104 +293,6 @@ function displayIndex() {
     </div>
     `;
 
-    const card1 = document.getElementById('card1');
-    const card2 = document.getElementById('card2');
-    const card3 = document.getElementById('card3');
-
-    card1.addEventListener('mouseenter', () => {
-       cardSwap(card1,
-        `
-        <div class="card-content">
-            <a class="links" href="https://tobhan8.github.io/Semester-Project-1-Exam/" target="_blank">
-                <i class="fa-solid fa-globe"></i>
-                <span>Deployed website</span>
-            </a>
-
-            <a class="links" href="https://github.com/TobHan8/Semester-Project-1-Exam" target="_blank">
-                <i class="fa-solid fa-code-branch"></i>
-                <span>Code repository</span>
-            </a>
-        </div>
-        `, {gap: '60px', justifyContent: 'center'});
-    });
-
-    card1.addEventListener('mouseleave', () => {
-        cardSwap(card1,
-        `
-        <div class="card-content">
-            <h2>.semesterProject1</h2>
-            <p>First HTML/CSS project in Front End Development studies</p>
-            <div class="icons">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-            </div>
-        </div>
-        `, {gap: '20px', justifyContent: 'flex-start'});
-
-    });
-
-    card2.addEventListener('mouseenter', () => {
-        cardSwap(card2,
-        `
-        <div class="card-content">
-            <a class="links" href="https://tobhan8.github.io/JavaScript-1-Course-Assignment-Rainy-Days-API/" target="_blank">
-                <i class="fa-solid fa-globe"></i>
-                <span>Deployed website</span>
-            </a>
-
-            <a class="links" href="https://github.com/TobHan8/JavaScript-1-Course-Assignment-Rainy-Days-API" target="_blank">
-                <i class="fa-solid fa-code-branch"></i>
-                <span>Code repository</span>
-            </a>
-        </div>
-        `, {gap: '60px', justifyContent: 'center'});
-    });
-
-    card2.addEventListener('mouseleave', () => {
-        cardSwap(card2,
-        `
-        <div class="card-content">
-            <h2>.javaScript1</h2>
-            <p>My first JavaScript project in Front End Development studies</p>
-            <div class="icons">
-                <i class="fa-brands fa-square-js"></i>
-            </div>
-        </div>
-        `, {gap: '20px', justifyContent: 'flex-start'});
-    });
-
-    card3.addEventListener('mouseenter', () => {
-     cardSwap(card3,
-        `
-        <div class="card-content">
-            <a class="links" href="https://tobhan8.github.io/exam-project-1/" target="_blank">
-                <i class="fa-solid fa-globe"></i>
-                <span>Deployed website</span>
-            </a>
-
-            <a class="links" href="https://github.com/TobHan8/exam-project-1" target="_blank">
-                <i class="fa-solid fa-code-branch"></i>
-                <span>Code repository</span>
-            </a>
-        </div>
-        `, {gap: '60px', justifyContent: 'center'});
-    });
-
-    card3.addEventListener('mouseleave', () => {
-        cardSwap(card3,
-        `
-        <div class="card-content">
-            <h2>.examProject1</h2>
-            <p>Final exam project in first year of Front End Development studies</p>
-            <div class="icons">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-            </div>
-        </div>
-        `, {gap: '20px', justifyContent: 'flex-start'});
-    });
-
     const cv = document.getElementById('cv');
     const letter = document.getElementById('letter');
 
@@ -190,8 +303,8 @@ function displayIndex() {
     letter.addEventListener('click', () => {
         downloadFromUrl('/assets/documents/test2.docx', 'test2');
     });
+
+    listeners();
 }
-
-
 
 displayIndex();

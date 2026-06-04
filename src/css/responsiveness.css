@@ -1,0 +1,245 @@
+@media(max-width: 1600px) {
+    .contact-btn {
+        font-size: 20px;
+    }
+
+    .contact-content {
+        width: 262px;
+        height: 112px;
+        gap: 10px;
+    }
+    .email {
+        font-size: 15px;
+    }
+    .copy {
+        font-size: 12px;
+    }
+    .close-btn {
+        width: 15px;
+        height: 15px;
+    }
+    .close-btn i {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1440px) {
+    .cards {
+        gap: 75px;
+    }
+
+    .card {
+        width: 260px;
+        height: 225px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    .links {
+        margin: 1.5rem;
+    }
+
+    .icons i,
+    .links i {
+        font-size: 30px;
+    }
+
+    .links span {
+        font-size: 15px;
+    }
+
+    .about-content-container {
+        width: 600px;
+        padding-bottom: 40px;
+    }
+
+    .download {
+        font-size: 18px;
+    }
+}
+
+
+@media(max-width: 1250px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 350px;
+        height: 300px;
+    }
+    .contact-content-container,
+    .contact-btn {
+        top: 160px;
+        bottom: unset;
+    }
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+    .links {
+        margin: 2.5rem;
+    }
+
+    .icons i,
+    .links i {
+        font-size: 40px;
+    }
+
+    .links span {
+        font-size: 20px;
+    }
+
+    .about-content-container {
+        width: 600px;
+        padding-bottom: 40px;
+    }
+
+    .download {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 960px) {
+    .contact-btn {
+        right: 30px;
+    }
+}
+
+
+@media(max-width: 780px) {
+    .contact-btn {
+        display: none;
+    }
+    .contact-btn-mobile {
+        display: flex;
+        right: 30px;
+        
+    }
+    .contact-btn-mobile i {
+        font-size: 30px;
+    }
+    .contact-content {
+        width: 350px;
+        height: 150px;
+        gap: 30px;
+    }
+    .close-btn {
+        top: 10px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    .close-btn i {
+        font-size: 20px;
+    }
+    .email {
+        font-size: 20px;
+    }
+    .copy {
+        font-size: 18px;
+    }
+}
+
+
+@media(max-width: 650px) {
+
+    header {
+        height: 60px;
+        margin-bottom: 75px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .cards {
+        gap: 75px;
+    }
+    .card {
+        width: 260px;
+        height: 225px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    .links {
+        margin: 1.5rem;
+    }
+
+    .icons i,
+    .links i {
+        font-size: 30px;
+    }
+
+    .links span {
+        font-size: 15px;
+    }
+
+    .about-content-container {
+        width: 500px;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .download {
+        font-size: 15px;
+    }
+    .contact-btn-mobile {
+        top: 100px;
+        right: 10px;
+    }
+    .contact-content-container {
+        top: 100px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .about-content-container {
+        width: 300px;
+    }
+    .doc-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 370px ) {
+    .contact-content {
+        width: 262px;
+        height: 112px;
+        gap: 10px;
+    }
+    .email {
+        font-size: 15px;
+    }
+    .copy {
+        font-size: 12px;
+    }
+    .close-btn {
+        width: 15px;
+        height: 15px;
+    }
+    .close-btn i {
+        font-size: 15px;
+    }
+    header {
+        gap: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+
