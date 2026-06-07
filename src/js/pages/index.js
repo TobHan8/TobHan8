@@ -297,7 +297,7 @@ function displayIndex() {
     const letter = document.getElementById('letter');
 
     cv.addEventListener('click', () => {
-        downloadFromUrl('assets/documents/test.docx', 'test');
+        downloadFromUrl('assets/documents/cv_tobias_hanevik.pdf', 'CV_Tobias_Hanevik');
     });
 
     letter.addEventListener('click', () => {
