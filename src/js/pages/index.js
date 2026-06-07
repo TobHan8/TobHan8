@@ -301,7 +301,7 @@ function displayIndex() {
     });
 
     letter.addEventListener('click', () => {
-        downloadFromUrl('assets/documents/test2.docx', 'test2');
+        downloadFromUrl('assets/documents/cover_letter_tobias_hanevik.pdf', 'cover_letter_tobias_hanevik');
     });
 
     listeners();
