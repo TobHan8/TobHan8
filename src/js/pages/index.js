@@ -31,12 +31,12 @@ function listeners() {
                 cardSwap(card1,
                     `
                     <div class="card-content">
-                        <a class="links" href="https://tobhan8.github.io/Semester-Project-1-Exam/" target="_blank">
+                        <a class="links" href="https://tobhan8.github.io/HTML-and-CSS-CA---Rainy-Days/" target="_blank">
                             <i class="fa-solid fa-globe"></i>
                             <span>Deployed website</span>
                         </a>
 
-                        <a class="links" href="https://github.com/TobHan8/Semester-Project-1-Exam" target="_blank">
+                        <a class="links" href="https://github.com/TobHan8/HTML-and-CSS-CA---Rainy-Days" target="_blank">
                             <i class="fa-solid fa-code-branch"></i>
                             <span>Code repository</span>
                         </a>
@@ -46,7 +46,7 @@ function listeners() {
                     cardSwap(card1,
                         `
                         <div class="card-content">
-                            <h2>.semesterProject1</h2>
+                            <h2>.html&css</h2>
                             <p>First HTML/CSS project in Front End Development studies</p>
                             <div class="icons">
                                 <i class="fa-brands fa-html5"></i>
@@ -65,12 +65,12 @@ function listeners() {
                     cardSwap(card2,
                     `
                     <div class="card-content">
-                        <a class="links" href="https://tobhan8.github.io/JavaScript-1-Course-Assignment-Rainy-Days-API/" target="_blank">
+                        <a class="links" href="https://tobhan8.github.io/Semester-Project-1-Exam/" target="_blank">
                             <i class="fa-solid fa-globe"></i>
                             <span>Deployed website</span>
                         </a>
 
-                        <a class="links" href="https://github.com/TobHan8/JavaScript-1-Course-Assignment-Rainy-Days-API" target="_blank">
+                        <a class="links" href="https://github.com/TobHan8/Semester-Project-1-Exam" target="_blank">
                             <i class="fa-solid fa-code-branch"></i>
                             <span>Code repository</span>
                         </a>
@@ -80,10 +80,11 @@ function listeners() {
                      cardSwap(card2,
                         `
                         <div class="card-content">
-                            <h2>.javaScript1</h2>
-                            <p>My first JavaScript project in Front End Development studies</p>
+                            <h2>.semesterProject1</h2>
+                            <p>First semester exam project in Front End Development studies</p>
                             <div class="icons">
-                                <i class="fa-brands fa-square-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
                             </div>
                         </div>
                         `);
@@ -97,26 +98,24 @@ function listeners() {
                     cardSwap(card3,
                         `
                         <div class="card-content">
-                            <a class="links" href="https://tobhan8.github.io/exam-project-1/" target="_blank">
-                                <i class="fa-solid fa-globe"></i>
-                                <span>Deployed website</span>
-                            </a>
+                        <a class="links" href="https://tobhan8.github.io/JavaScript-1-Course-Assignment-Rainy-Days-API/" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Deployed website</span>
+                        </a>
 
-                            <a class="links" href="https://github.com/TobHan8/exam-project-1" target="_blank">
-                                <i class="fa-solid fa-code-branch"></i>
-                                <span>Code repository</span>
-                            </a>
-                        </div>
+                        <a class="links" href="https://github.com/TobHan8/JavaScript-1-Course-Assignment-Rainy-Days-API" target="_blank">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Code repository</span>
+                        </a>
+                    </div>
                         `);
                 } else {
                      cardSwap(card3,
                         `
                         <div class="card-content">
-                            <h2>.examProject1</h2>
-                            <p>Final exam project in first year of Front End Development studies</p>
+                            <h2>.javaScript1</h2>
+                            <p>My first JavaScript project in Front End Development studies</p>
                             <div class="icons">
-                                <i class="fa-brands fa-html5"></i>
-                                <i class="fa-brands fa-css3-alt"></i>
                                 <i class="fa-brands fa-square-js"></i>
                             </div>
                         </div>
@@ -129,6 +128,38 @@ function listeners() {
     } else {
         card1.addEventListener('mouseenter', () => {
         cardSwap(card1,
+            `
+            <div class="card-content">
+                <a class="links" href="https://tobhan8.github.io/HTML-and-CSS-CA---Rainy-Days/" target="_blank">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Deployed website</span>
+                </a>
+
+                <a class="links" href="https://github.com/TobHan8/HTML-and-CSS-CA---Rainy-Days" target="_blank">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <span>Code repository</span>
+                </a>
+            </div>
+            `);
+        });
+
+        card1.addEventListener('mouseleave', () => {
+            cardSwap(card1,
+            `
+            <div class="card-content">
+                <h2>.html&css</h2>
+                <p>First HTML/CSS project in Front End Development studies</p>
+                <div class="icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+            </div>
+            `);
+
+        });
+
+        card2.addEventListener('mouseenter', () => {
+            cardSwap(card2,
             `
             <div class="card-content">
                 <a class="links" href="https://tobhan8.github.io/Semester-Project-1-Exam/" target="_blank">
@@ -144,23 +175,22 @@ function listeners() {
             `);
         });
 
-        card1.addEventListener('mouseleave', () => {
-            cardSwap(card1,
+        card2.addEventListener('mouseleave', () => {
+            cardSwap(card2,
             `
             <div class="card-content">
                 <h2>.semesterProject1</h2>
-                <p>First HTML/CSS project in Front End Development studies</p>
+                <p>First semester exam project in Front End Development studies</p>
                 <div class="icons">
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
                 </div>
             </div>
             `);
-
         });
 
-        card2.addEventListener('mouseenter', () => {
-            cardSwap(card2,
+        card3.addEventListener('mouseenter', () => {
+        cardSwap(card3,
             `
             <div class="card-content">
                 <a class="links" href="https://tobhan8.github.io/JavaScript-1-Course-Assignment-Rainy-Days-API/" target="_blank">
@@ -176,45 +206,13 @@ function listeners() {
             `);
         });
 
-        card2.addEventListener('mouseleave', () => {
-            cardSwap(card2,
+        card3.addEventListener('mouseleave', () => {
+            cardSwap(card3,
             `
             <div class="card-content">
                 <h2>.javaScript1</h2>
                 <p>My first JavaScript project in Front End Development studies</p>
                 <div class="icons">
-                    <i class="fa-brands fa-square-js"></i>
-                </div>
-            </div>
-            `);
-        });
-
-        card3.addEventListener('mouseenter', () => {
-        cardSwap(card3,
-            `
-            <div class="card-content">
-                <a class="links" href="https://tobhan8.github.io/exam-project-1/" target="_blank">
-                    <i class="fa-solid fa-globe"></i>
-                    <span>Deployed website</span>
-                </a>
-
-                <a class="links" href="https://github.com/TobHan8/exam-project-1" target="_blank">
-                    <i class="fa-solid fa-code-branch"></i>
-                    <span>Code repository</span>
-                </a>
-            </div>
-            `);
-        });
-
-        card3.addEventListener('mouseleave', () => {
-            cardSwap(card3,
-            `
-            <div class="card-content">
-                <h2>.examProject1</h2>
-                <p>Final exam project in first year of Front End Development studies</p>
-                <div class="icons">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
                     <i class="fa-brands fa-square-js"></i>
                 </div>
             </div>
@@ -231,32 +229,31 @@ function displayIndex() {
 
         <a id="card1" class="card">
             <div class="card-content">
-                <h2>.semesterProject1</h2>
+                <h2>.html&css</h2>
                 <p>First HTML/CSS project in Front End Development studies</p>
                 <div class="icons">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
                 </div>
             </div>
         </a>
 
         <a id="card2" class="card">
             <div class="card-content">
-                <h2>.javaScript1</h2>
-                <p>My first JavaScript project in Front End Development studies</p>
+                <h2>.semesterProject1</h2>
+                <p>First semester exam project in Front End Development studies</p>
                 <div class="icons">
-                <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
                 </div>
             </div>
         </a>
 
         <a id="card3" class="card">
             <div class="card-content">
-                <h2>.examProject1</h2>
-                <p>Final exam project in first year of Front End Development studies</p>
+                <h2>.javaScript1</h2>
+                <p>My first JavaScript project in Front End Development studies</p>
                 <div class="icons">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
                 <i class="fa-brands fa-square-js"></i>
                 </div>
             </div>
@@ -277,7 +274,7 @@ function displayIndex() {
             with creating websites with vanilla HTML, CSS and JavaScript. <br></br> This portfolio page reflects this journey by showcasing my first coding project 
             and the following school projects. These projects are not refined or suited for professional use, but they give an honest and humble insight in my 
             first year journey into Front End Development. <br></br>
-            If you wish to take a look at my CV and cover letter, please click the buttons below to download the documents:
+            If you wish to take a look at my fictional CV and cover letter, please click the buttons below to download the documents as PDF:
             </p>
 
             <div class="doc-links">
