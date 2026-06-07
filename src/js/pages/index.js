@@ -269,13 +269,15 @@ function displayIndex() {
 
             <h2>.aboutMe</h2>
             <p>
-            Hello world! My name is Tobias. I am a 28 year-old man from Bergen in Norway. <br></br> 
+            Hello world! My name is Tobias. I am a 28 year-old man from Bergen in Norway. <br></br>
+            This page is purely for school education purposes in the Portfolio 1 course. None of the projects or contents of this page should
+            be viewed as real attempts to land job offers and opportunities. Some information and content is completely fictional for this purpose. <br></br> 
             For the last year I have been studying Front End Development at Noroff school of digital media and technology. 
             In my first year, I started out with no coding experience. From here I have grown into becoming increasingly comfortable 
             with creating websites with vanilla HTML, CSS and JavaScript. <br></br> This portfolio page reflects this journey by showcasing my first coding project 
             and the following school projects. These projects are not refined or suited for professional use, but they give an honest and humble insight in my 
             first year journey into Front End Development. <br></br>
-            If you wish to take a look at my CV and cover letter, please click the buttons below to download the documents.
+            If you wish to take a look at my CV and cover letter, please click the buttons below to download the documents:
             </p>
 
             <div class="doc-links">
